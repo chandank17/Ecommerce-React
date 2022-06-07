@@ -26,18 +26,18 @@ const Navigation = () => {
   }));
 
   const scrollHandler = () => {
-    if (navbar.current && window.screen.width > 480) {
-      if (window.pageYOffset >= 70) {
-        navbar.current.classList.add('is-nav-scrolled');
-      } else {
-        navbar.current.classList.remove('is-nav-scrolled');
-      }
-    }
+    // if (navbar.current && window.screen.width > 480) {
+    //   if (window.pageYOffset >= 70) {
+    //     navbar.current.classList.add('is-nav-scrolled');
+    //   } else {
+    //     navbar.current.classList.remove('is-nav-scrolled');
+    //   }
+    // }
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', scrollHandler);
-    return () => window.removeEventListener('scroll', scrollHandler);
+    // window.addEventListener('scroll', scrollHandler);
+    // return () => window.removeEventListener('scroll', scrollHandler);
   }, []);
 
   const onClickLink = (e) => {
@@ -55,7 +55,7 @@ const Navigation = () => {
   ];
 
   if (store.user && store.user.role === 'ADMIN') {
-    return null;
+    // return null;
   } if (window.screen.width <= 800) {
     return (
       <MobileNavigation

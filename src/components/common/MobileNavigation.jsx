@@ -20,6 +20,7 @@ const Navigation = (props) => {
 
   return (
     <nav className="mobile-navigation">
+      cjajdaj
       <div className="mobile-navigation-main">
         <div className="mobile-navigation-logo">
           <Link onClick={onClickLink} to={HOME}>
