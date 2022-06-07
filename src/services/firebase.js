@@ -244,8 +244,7 @@ class Firebase {
       .limit(itemsCount)
       .get();
 
-  addProduct = (id, product) =>
-    this.db.collection("products").doc(id).set(product);
+  addProduct = (id, product) => this.db.collection('products').doc(id).set(product);
 
   generateKey = () => this.db.collection("products").doc().id;
 
